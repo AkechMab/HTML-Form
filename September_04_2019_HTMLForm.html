@@ -1,0 +1,302 @@
+<!-- Adding mulitple external Javascript files to an HTML file
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Two external Javascript files</title>
+
+	</head>
+	<body>
+		
+		<h1>What Can Javascript Do?</h1>
+		
+		<p id="firstPara">Use multiple external Javascript files in one HTML document</p>
+		
+		<p id="demo">Hello World</p>
+
+		<button type="button" onclick ="myFunctionOne()">Click to change font size</button>
+		<button type="button" onclick ="myFunctionTwo()">Click to change html content</button>
+		<button type="button" onclick ="myFunction()">Click me!</button>	
+		
+		<script src ="myFunction1.js"></script>
+		<script src ="myFunction2.js"></script>
+		<script src ="myFunction.js"></script>
+		
+	</body>
+</html>-->
+
+<!-- Adding External Javascript File From  the Web
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adding External Javascript File From The Web</title>
+</head>
+<body>
+	
+	<p id='demo'>Paragraph One.</p>
+	
+	<button type="button" onclick="myFunction()">Try it</button>
+	
+	<script src="https://www.w3schools.com/js/myScript.js"></script>
+	
+</body>
+</html>-->
+
+
+<!-- Javascript Sum Calculation
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Sum calculation</title>
+		<style>
+			div
+			{
+			color: red;
+			float: left;
+			}
+			button 
+			{
+			 background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+				<p id="demo">5 + 6</p>
+				<p id="demo2"></p>		
+		</div>
+
+
+		<button type="button" onclick="myFunctionOne()">Click Me!</button>
+
+		<script>	
+			function myFunctionOne()
+			{
+				document.getElementById('demo2').innerHTML = 5 + 6 ;
+			}
+		</script>
+	</body>
+</html>-->
+
+<!-- Using An Alert Box To Display Data
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Using An Alert Box To Display Data</title>
+</head>
+<body>
+	
+	<h1>What Can Javascript Do?</h1>
+	
+	<p id="demo">This is a paragraph.</p>
+	
+	<button type="button" onclick="myFunction()">Click Me!</button>
+	
+	<script>
+		function myFunction()
+		{
+		 	window.alert(5+6)	
+		}
+	</script>
+	
+</body>
+</html>-->
+
+<!-- Using console.log() For Debugging
+<!doctype html>
+<html>
+	<head>
+		<title>Using console.log() to Display Data When Debugging</title>
+	</head>
+	<body>
+		
+		<h1>What Can Javascript Do?</h1>
+		
+		<p id="demo">Using the console.log() for debugging</p>
+		
+		<button type="button" onclick="myFunction()">Click Me!</button>
+		
+		<script> 
+			function myFunction()
+			{
+				console.log(5+6)
+			}
+		</script>
+		
+	</body>
+</html>-->
+
+<!--HTML Form
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Form</title>
+</head>
+<body>
+<form>
+	<table>
+		<tr>
+			<td><label for="username">User Name</label></td>
+			<td><input type="text" id="username" name="username"></td>
+		</tr>
+		<tr>
+			<td><label for="password">Password</label></td>
+			<td><input type="password" id="password" name="password"></td>
+		</tr>
+		<tr>
+				<td>
+					<label for="gender">Gender</label>
+				</td>
+				<td>
+					Male:   <input type="radio" name="gender" value="male" >
+					Female: <input type="radio" name="gender" value="female" >
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="skills">Skills</label>
+			</td>
+			<td>
+				HTML: <input type="checkbox" id="html" value="html" name="html">
+				CSS:  <input type="checkbox" id="css" value="css" name="css">
+				PHP:  <input type="checkbox" id="php" value="php" name="php">
+			</td>
+		</tr>
+		<tr>
+				<td>
+					<label for="country">Select Your Country</label>
+				</td>
+				<td>
+					<select name="country" id="country">
+						<option value="">Select an option...</option>
+						<option value="Canada">Canada</option>
+						<option value="France">France</option>
+						<option value="South Sudan">South Sudan</option>
+						<option value="Kenya">Kenya</option>
+						<option value="Uganda">Uganda</option>
+					</select>
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="comment">Comment</label>
+				<td><textarea name="comment" id="comment" rows="10" cols="30"></textarea></td>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Click to submit" name="submit"></td>
+		</tr>	
+	</table>	
+</form>
+</body>
+</html>-->
+
+<!--Styling HTML Form-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Form</title>
+	<style> 
+		form
+		{
+			width: 400px;
+			background-color: silver;
+			border: 2px solid black;
+			padding: 20px;
+			margin: 0 auto;		
+		}
+		input[type='text'], input[type='password'], select
+		{
+			width: 300px;
+			height: 20px;
+			border: 1px solid orange;
+		
+		}
+		h2
+		{
+			text-align: center;
+		}
+		
+		textarea
+		{
+			resize: none;
+		}
+		input[type='submit']
+		{
+			background-color: blue;
+			color: white;
+			width: 300px;
+			height: 20px;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<h2>Personal Form</h2>
+	<table>
+		<tr>
+			<td><label for="username">User Name</label></td>
+			<td><input type="text" id="username" name="username"></td>
+		</tr>
+		<tr>
+			<td><label for="password">Password</label></td>
+			<td><input type="password" id="password" name="password"></td>
+		</tr>
+		<tr>
+				<td>
+					<label for="gender">Gender</label>
+				</td>
+				<td>
+					Male:   <input type="radio" name="gender" value="male" > <br>
+					Female: <input type="radio" name="gender" value="female" > 
+					<br>
+					<br>
+				</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label for="skills">Skills</label>
+			</td>
+			<td>
+				HTML: <input type="checkbox" id="html" value="html" name="html"> <br>
+				CSS:  <input type="checkbox" id="css" value="css" name="css"> <br>
+				PHP:  <input type="checkbox" id="php" value="php" name="php"> <br>
+			</td>
+		</tr>
+		<tr>
+				<td>
+					<label for="country">Select Your Country</label>
+				</td>
+				<td>
+					<select name="country" id="country">
+						<option value="">Select an option...</option>
+						<option value="Canada">Canada</option>
+						<option value="France">France</option>
+						<option value="South Sudan">South Sudan</option>
+						<option value="Kenya">Kenya</option>
+						<option value="Uganda">Uganda</option>
+					</select>
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="comment">Comment</label>
+				<td><textarea name="comment" id="comment" rows="10" cols="40"></textarea></td>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Click to submit" name="submit"></td>
+		</tr>	
+	</table>	
+</form>
+</body>
+</html>
+
+
+
